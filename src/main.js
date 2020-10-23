@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import routes from './routes'
 import CJUI from './components/index'
-import
+// import scss
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 Vue.use(CJUI)
