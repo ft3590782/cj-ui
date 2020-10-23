@@ -1,8 +1,8 @@
-import ElButtonGroup from '../button/src/button-group';
+import CjButtonGroup from '../button/src/button-group'
 
 /* istanbul ignore next */
-ElButtonGroup.install = function(Vue) {
-  Vue.component(ElButtonGroup.name, ElButtonGroup);
-};
+CjButtonGroup.install = function (Vue) {
+  Vue.component(CjButtonGroup.name, CjButtonGroup)
+}
 
-export default ElButtonGroup;
+export default CjButtonGroup

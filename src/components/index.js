@@ -1,7 +1,11 @@
 import Avatar from './avatar'
+import Button from './button'
+import ButtonGroup from './button-group'
 
 const components = {
-  Avatar
+  Avatar,
+  Button,
+  ButtonGroup
 }
 
 const install = function (Vue) {
@@ -9,7 +13,6 @@ const install = function (Vue) {
     Vue.component(components[key].name, components[key])
   })
 }
-
 
 export default {
   install

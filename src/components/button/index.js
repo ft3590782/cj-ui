@@ -1,8 +1,8 @@
-import ElButton from './src/button';
+import CjButton from './src/button'
 
 /* istanbul ignore next */
-ElButton.install = function(Vue) {
-  Vue.component(ElButton.name, ElButton);
-};
+CjButton.install = function (Vue) {
+  Vue.component(CjButton.name, CjButton)
+}
 
-export default ElButton;
+export default CjButton

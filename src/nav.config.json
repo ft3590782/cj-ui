@@ -1,0 +1,14 @@
+{
+  "navs": [
+    {
+      "title": "头像",
+      "name": "Avatar",
+      "path": "/avatar"
+    },
+    {
+      "title": "按钮",
+      "name": "Button",
+      "path": "/button"
+    }
+  ]
+}
