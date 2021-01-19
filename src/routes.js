@@ -23,7 +23,7 @@ const registerRoute = navConfig => {
 }
 
 let router = registerRoute(navConfig)
-console.log(router)
+// console.log(router)
 // const router = new VueRouter({
 //   routes: [
 //     {

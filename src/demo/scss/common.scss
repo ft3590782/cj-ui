@@ -1,0 +1,191 @@
+@import "@/scss/border1px.scss"; //引入文件
+@include borderCreator("border-top", "top", solid, #efefef); //这会创建一个名字为`border-btn`的class
+@include borderCreator(
+  "border-bottom",
+  "bottom",
+  solid,
+  #efefef
+); //这会创建一个名字为`border-btn`的class
+
+.field {
+  .row {
+    padding: 28px 0;
+    background-color: #fff;
+    .col-1 {
+      flex: 1 1 200px;
+      width: 200px;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(159, 159, 159, 1);
+      line-height: 45px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .important {
+        font-size: 25px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(255, 15, 15, 1);
+        line-height: 36px;
+        margin-left: 10px;
+      }
+    }
+    .col-2 {
+      padding-left: 30px;
+      flex: 1 1 100%;
+      width: 100%;
+      font-size: 32px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(68, 68, 68, 1);
+      line-height: 45px;
+      .placeholder-text {
+        flex: 1 1 auto;
+        width: auto;
+        text-align: left;
+        font-size: 30px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: rgba(204, 204, 204, 1);
+        line-height: 42px;
+      }
+      .arrow {
+        width: 32px;
+        height: 32px;
+        background-image: url("~@/assets/images/arrow_right.svg");
+        background-size: 100% 100%;
+        margin-left: 18px;
+      }
+    }
+
+    .address {
+      font-size: 24px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.5);
+      line-height: 33px;
+      .icon-loaction {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        background-image: url("~@/assets/images/location.svg");
+        background-size: 100% 100%;
+      }
+    }
+
+    .add-pic {
+      width: 122px;
+      height: 122px;
+      background: rgba(239, 239, 239, 1);
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      .icon.iconfont-plus {
+        width: 37px;
+        height: 37px;
+        background-image: url("~@/assets/images/plus.svg");
+        background-size: 100% 100%;
+        margin-top: 14px;
+        margin-bottom: 10px;
+      }
+
+      .upload {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+//mand-mobile 定制化css
+.md-popup-title-bar .md-popup-confirm {
+  color: #d8994c !important;
+}
+.md-selector .md-radio-item.is-selected .md-cell-item-title {
+  color: #d8994c !important;
+}
+.md-radio-item.is-selected .md-cell-item-content {
+  color: #d8994c !important;
+}
+.md-tab-bar {
+  background-color: transparent !important;
+}
+
+.custom-md-tabs {
+  background-color: #fff;
+  .md-tabs-content {
+    background-color: #f6f6f6;
+  }
+  .md-tab-bar-item {
+    font-size: 32px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #b0afaf;
+    line-height: 45px;
+    letter-spacing: 1px;
+    min-height: 80px;
+    height: 80px;
+  }
+  .md-tab-bar-item.is-active {
+    color: rgba(51, 51, 51, 1);
+  }
+  .md-tab-bar-ink {
+    height: 6px;
+    background-color: rgba(208, 155, 89, 1);
+  }
+}
+
+.md-field-item-content:before {
+  display: none;
+}
+.md-dialog-title {
+  white-space: pre;
+}
+.md-dialog-btn:last-child {
+  color: #d8994c!important;
+}
+
+.btn.btn-bottom.btn-full {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #d39f5e;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.btn.btn-middle.btn-full {
+  position: fixed;
+  bottom: 50%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  height: 100px;
+  background-color: #d39f5e;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 28px;
+  z-index: 2;
+}
+
+.md-cell-item-body {
+  min-height: 100px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}

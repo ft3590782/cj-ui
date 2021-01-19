@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@import "common/var";
+@import "mixins/button";
+@import "mixins/mixins";
+@import "mixins/utils";
+
+@include b(div-editor) {
+  width: 100%;
+  outline: 0 none;
+  min-height: 32px;
+  max-height: 300px;
+  white-space: pre;
+  background-color: transparent;
+  border: 0 none;
+  font-size: 32px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  line-height: 45px;
+  text-align: left;
+  overflow-y: auto;
+  -webkit-user-modify: read-write-plaintext-only;
+  user-modify: read-write-plaintext-only;
+  &:empty::after {
+    content: attr(placeholder);
+    font-size: 30px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    line-height: 45px;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    pointer-events: none;
+  }
+}

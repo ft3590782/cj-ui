@@ -54,7 +54,7 @@ html {
     height: 100%;
     border-right: 1px solid #e8e8e8;
     .side-item {
-      height: 30px;
+      height: 50px;
       line-height: 30px;
       padding: 10px 20px;
       border-bottom: 1px solid #e8e8e8;

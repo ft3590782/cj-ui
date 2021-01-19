@@ -9,6 +9,16 @@
       "title": "按钮",
       "name": "Button",
       "path": "/button"
+    },
+    {
+      "title": "日历",
+      "name": "Calendar",
+      "path": "/calendar"
+    },
+    {
+      "title": "多行文本框",
+      "name": "div-editor",
+      "path": "/div-editor"
     }
   ]
 }
